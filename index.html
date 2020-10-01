@@ -1,33 +1,10 @@
 ---
 layout: default
-title: Home
+title: My Home Page
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+<p>I am a Lecturer IV in the School of Information at the University of Michigan. I focus on the introductory programming courses such as Data-Oriented Programming (SI 206) and the Web Design Courses (SI 339 and SI 539).</p>
 
-    {{ post.content }}
-  </article>
-  {% endfor %}
-</div>
+<p>My previous jobs include Associate Professor at <a href = "http://csulb.edu">California State University</a> and positions at NASA JPL, the Naval Research Lab, and the NSA. I received my BS from <a href = "http://www.kent.edu">Kent State University</a> Honors College in Computer Science, and an MS and PhD from the University of Pittsburgh, also in Computer Science. My thesis was on Artificial Intelligence applications on the Nursebot Project, a robotic assistant for the elderly.</p>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: relative_url }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>

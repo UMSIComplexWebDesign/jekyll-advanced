@@ -1,30 +1,30 @@
 # Setup
 title: Colleen van Lent
 tagline: Using the Poole Jekyll code
-url: https://UMSIComplexWebDesign/jekyll-advanced
+url: https://UMSIComplexWebDesign.github.io/jekyll-advanced
 paginate: 1
 baseurl: ""
 permalink: pretty
 
 # Gems
-plugins:
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-seo-tag
+# plugins:
+#   - jekyll-gist
+#   - jekyll-paginate
+#   - jekyll-seo-tag
 
 # Optimize Jekyll
-exclude:
-  - .editorconfig
-  - .git
-  - .jekyll-cache
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE.md
-  - README.md
+# exclude:
+#   - .editorconfig
+#   - .git
+#   - .jekyll-cache
+#   - Gemfile
+#   - Gemfile.lock
+#   - LICENSE.md
+#   - README.md
 
-sass:
-  sass_dir: _sass
-  style: :compressed
+# sass:
+#   sass_dir: _sass
+#   style: :compressed
 
 # Options
 
